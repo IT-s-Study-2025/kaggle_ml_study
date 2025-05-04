@@ -15,7 +15,7 @@
 | 권나연 | [KwonNayeon](https://github.com/KwonNayeon) |
 | 김예원 | [HaileysArchives](https://github.com/HaileysArchives) |
 | 송은서 | [liz-song](https://github.com/liz-song) |
-| 조은영 | [username](https://github.com/username) |
+| 조은영 | [bona723](https://github.com/bona723) |
 
 ## 🏆 참여한 대회
 
