@@ -1,19 +1,37 @@
-# Binary Prediction with Dashcam Dataset
+# 📂 블랙박스 영상을 활용한 이진 분류
 
-This folder contains our work for the [Nexar Dashcam Crash Prediction Challenge](https://www.kaggle.com/competitions/nexar-collision-prediction) hosted on Kaggle.
+이 폴더는 [Nexar Dashcam Crash Prediction Challenge](https://www.kaggle.com/competitions/nexar-collision-prediction) 대회에 참여하며 수행한 프로젝트를 정리한 자료입니다.
 
-The goal of this competition is to build a model that predicts imminent vehicle collisions or near-misses using real-world dashcam videos. The task is framed as a binary classification problem, where both collisions and near-misses are considered positive cases.
+본 대회의 목표는 실제 도로 주행 상황을 촬영한 블랙박스 영상 데이터를 기반으로, 차량 충돌 및 근접 사고를 사전에 예측하는 머신러닝 모델을 개발하는 것입니다.
 
-## Competition Overview
-- **Type**: Binary Classification (Collision / No Collision)  
-- **Goal**: Predict imminent collisions or near-misses from dashcam videos  
-- **Data**: 1,500 labeled training videos (400 collisions, 350 near-misses, 750 normal) + 1,344 test videos  
-- **Annotations**:  
-  - `event_type`: Collision / Near-miss / Normal  
-  - `alert_time`: Earliest time a potential accident can be predicted  
-  - `event_time`: Time of the actual incident  
-- **Evaluation Metric**: Mean Average Precision (mAP) at 500ms, 1000ms, and 1500ms before the event  
-- **Prizes**:  
-  - 🥇 Trip to Portugal (up to $5,000)  
-  - 🥈🥉 Recognition via blog & CVPR DriveX Workshop  
-- **Host**: Nexar
+문제 유형은 **이진 분류(Binary Classification)**이며, **충돌(Collision)**과 **근접 사고(Near-miss)**를 모두 **양성 클래스(Positive)**로 간주합니다.
+
+---
+
+## 🏁 대회 개요
+
+| 항목 | 내용 |
+|------|------|
+| **대회 유형** | 이진 분류 (충돌 / 비충돌) |
+| **예측 목표** | 블랙박스 영상으로부터 충돌 또는 근접 사고를 사전에 예측 |
+| **데이터 구성** | 학습용 영상 1,500개 (충돌 400개 / 근접 사고 350개 / 정상 주행 750개)<br>테스트 영상 1,344개 |
+| **라벨 정보** | `event_type` : 충돌 / 근접 사고 / 정상<br>`alert_time` : 사고 예측이 가능했던 시점<br>`event_time` : 실제 사고 발생 시점 |
+| **평가 지표** | 사고 발생 전 **500ms / 1000ms / 1500ms**에서의 **평균 정밀도 (Mean Average Precision, mAP)** |
+| **시상 내용** | 🥇 포르투갈 왕복 항공권 및 체류비 (최대 $5,000)<br>🥈🥉 블로그 및 CVPR DriveX 워크숍을 통한 수상자 소개 |
+| **주최** | Nexar |
+
+---
+
+## 🛠️ 작업 폴더 안내
+
+- 📁 `./eda/`: 데이터 탐색 및 전처리  
+- 📁 `./baseline/`: 기본 모델 구축 코드  
+- 📁 `./models/`: 실험별 모델 구조 및 성능 비교  
+- 📁 `./notebooks/`: 실험 노트북 및 보고서  
+
+---
+
+## 📌 참고 사항
+
+- 이 프로젝트는 **잇츠스터디 3기** 스터디의 일환으로 진행되었습니다.
+- 본 레포지토리는 학습 및 협업 목적이며, 상업적 용도로 활용되지 않습니다.

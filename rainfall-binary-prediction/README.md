@@ -1,9 +1,32 @@
-# Binary Prediction with Rainfall Dataset
+# ☔️ 강수 여부 예측을 위한 이진 분류
 
-This folder contains our work for the [Playground Series - Season 5, Episode 3](https://www.kaggle.com/competitions/playground-series-s5e3) Kaggle competition.
+이 폴더는 [Playground Series - Season 5, Episode 3](https://www.kaggle.com/competitions/playground-series-s5e3) Kaggle 대회에 참여하며 진행한 프로젝트를 정리한 자료입니다.
 
-## Competition Overview
-- **Type**: Binary Classification
-- **Goal**: Predict rainfall occurrence (binary: rain or no rain) using weather data
-- **Evaluation Metric**: AUC (Area Under the ROC Curve)
-- **Data Source**: Based on Hong Kong Weather Observation data (2015-2016)
+본 대회의 목표는 기상 관측 데이터를 활용하여, **강수 발생 여부(비 / 비 안 옴)**를 예측하는 이진 분류 모델을 구축하는 것입니다.
+
+---
+
+## 🏁 대회 개요
+
+| 항목 | 내용 |
+|------|------|
+| **대회 유형** | 이진 분류 (비 / 비 안 옴) |
+| **예측 목표** | 기상 데이터를 바탕으로 해당 시간대에 **비가 올지 여부를 예측** |
+| **평가 지표** | AUC (ROC 커브 아래 면적) |
+| **데이터 출처** | 홍콩 기상 관측 데이터 (2015–2016) 기반 |
+
+---
+
+## 🛠️ 작업 폴더 안내
+
+- 📁 `./eda/`: 데이터 탐색 및 시각화  
+- 📁 `./baseline/`: 기본 모델 및 성능 점검  
+- 📁 `./experiments/`: 다양한 피처 및 모델 실험 기록  
+- 📁 `./notebooks/`: 발표 및 공유용 정리 노트북
+
+---
+
+## 📌 참고 사항
+
+- 이 프로젝트는 **잇츠스터디 3기** 스터디의 일환으로 진행되었습니다.
+- 본 레포지토리는 학습 및 협업 목적이며, 상업적 용도로 활용되지 않습니다.
